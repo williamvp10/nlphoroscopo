@@ -1,0 +1,39 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hola",
+        "intent": "saludo",
+        "entities": []
+      },
+      {
+        "text": "buen dia",
+        "intent": "saludo",
+        "entities": []
+      },
+      {
+        "text": "tienes mi horoscopo",
+        "intent": "get_horoscopo",
+        "entities": []
+      },
+      {
+        "text": "puedes decirme el horoscopo?",
+        "intent": "get_horoscopo",
+        "entities": []
+      },
+      {
+        "text": "porfavor me suscribes",
+        "intent": "subscripcion",
+        "entities": []
+      },
+      {
+        "text": "suscribeme",
+        "intent": "subscripcion",
+        "entities": []
+      }
+        
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

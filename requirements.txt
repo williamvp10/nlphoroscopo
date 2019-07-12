@@ -1,0 +1,7 @@
+rasa_nlu
+requests
+gunicorn
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+uwsgi
