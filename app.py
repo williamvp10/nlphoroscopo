@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, request
 from flask_restful import Resource, reqparse, Api
 from rasa_nlu.training_data import load_data
@@ -35,4 +36,5 @@ api.add_resource(train, '/train')
 api.add_resource(intent, '/intent')
   
 if __name__=='__main__':
-    app.run(debug=True)
+     port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port,debug=True)
