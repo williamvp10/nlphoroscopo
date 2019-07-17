@@ -5,9 +5,24 @@
         "text": "hola",
         "intent": "saludo",
         "entities": []
+      }, 
+      {
+        "text": "holi",
+        "intent": "saludo",
+        "entities": []
       },
       {
+        "text": "que tal",
+        "intent": "saludo",
+        "entities": []
+      },  
+      {
         "text": "buen dia",
+        "intent": "saludo",
+        "entities": []
+      },
+      {
+        "text": "buenas tardes",
         "intent": "saludo",
         "entities": []
       },
@@ -22,12 +37,126 @@
         "entities": []
       },
       {
+        "text": "me predices mi futuro",
+        "intent": "get_horoscopo",
+        "entities": []
+      },
+      {
+        "text": "horocopo",
+        "intent": "get_horoscopo",
+        "entities": []
+      },  
+      {
+        "text": "tienes mi horoscopo, soy Tauro",
+        "intent": "signo_intent",
+        "entities": [
+        {
+            "start": 25,
+            "end": 30,
+            "value": "Tauro",
+            "entity": "Signo"
+        }
+        ]
+      },{
+        "text": "soy Aries",
+        "intent": "signo_intent",
+        "entities": [
+        {
+            "start": 4,
+            "end": 9,
+            "value": "Aries",
+            "entity": "Signo"
+        }
+        ]
+      },
+      {
+        "text": "Geminis",
+        "intent": "signo_intent",
+        "entities": [
+        {
+            "start": 0,
+            "end": 7,
+            "value": "Geminis",
+            "entity": "Signo"
+        }
+        ]
+      },  
+      {
+        "text": "19-01",
+        "intent": "dob_intent",
+        "entities": [
+        {
+            "start": 0,
+            "end": 2,
+            "value": "19",
+            "entity": "DD"
+        },
+        {
+            "start": 3,
+            "end": 5,
+            "value": "01",
+            "entity": "MM"
+        }
+        ]
+      },
+      {
+        "text": "06-05",
+        "intent": "dob_intent",
+        "entities": [
+        {
+            "start": 0,
+            "end": 2,
+            "value": "06",
+            "entity": "DD"
+        },
+        {
+            "start": 3,
+            "end": 5,
+            "value": "05",
+            "entity": "MM"
+        }
+        ]
+      },
+      {
+        "text": "16-10",
+        "intent": "dob_intent",
+        "entities": [
+        {
+            "start": 0,
+            "end": 2,
+            "value": "16",
+            "entity": "DD"
+        },
+        {
+            "start": 3,
+            "end": 5,
+            "value": "10",
+            "entity": "MM"
+        }
+        ]
+      },  
+      {
         "text": "porfavor me suscribes",
         "intent": "subscripcion",
         "entities": []
       },
       {
         "text": "suscribeme",
+        "intent": "subscripcion",
+        "entities": []
+      },
+      {
+        "text": "suscripcion",
+        "intent": "subscripcion",
+        "entities": []
+      },
+      {
+        "text": "quiero suscribirme",
+        "intent": "subscripcion",
+        "entities": []
+      },
+      {
+        "text": "quiero el reporte diario de mi horoscopo",
         "intent": "subscripcion",
         "entities": []
       }

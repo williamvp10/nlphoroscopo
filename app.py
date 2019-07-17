@@ -15,9 +15,18 @@ class index(Resource):
 
 class intent(Resource):
     def post(self):
-        json_data = request.get_json(force=True)
-        text = json_data['text']
-        json= predict_intent(text)
+        try:
+            json_data = request.get_json(force=True)
+            text = json_data['text']
+            json= predict_intent(text)
+        except:
+            print("error modelo no existe, Entrenado el modelo ...")
+            train_bot()
+            print("modelo entrenado :)")
+            json_data = request.get_json(force=True)
+            text = json_data['text']
+            json= predict_intent(text)
+            
         return json
     
 class train(Resource):
